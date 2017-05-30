@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+.card {
+    width: 350px;
+    height: 350px;
+    background-color: #444045;
+    margin-top: 5%;
+}
+
+.card.text-center.fade-in {
+    transition: .2s ease-in-out all;
+}
+
+.card:hover {
+    background-color: #69666A;
+    
+    cursor: pointer;
+}
+
+.img-responsive {
+    display: inline-block;
+}
+
+.hr-grey {
+    border-color: #69666A;
+    height: 11px;
+    width: 261px;
+}
+
+.card>p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 28px;
+    color: #FFFFFF;
+}
