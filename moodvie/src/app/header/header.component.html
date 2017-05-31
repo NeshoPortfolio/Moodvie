@@ -6,8 +6,8 @@
 
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li><a [routerLink]="['']">Genres</a></li>
-        <li><a href="#">Profile</a></li>
+        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['']">Genres</a></li>
+        <li routerLinkActive="active"><a href="#">Profile</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#" class="navbar-brand">Log In</a></li>
