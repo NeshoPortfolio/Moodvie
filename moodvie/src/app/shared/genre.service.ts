@@ -6,7 +6,9 @@ export class GenreService {
         new Genre('Comedy', '../../assets/comedy-emoji.png'),
         new Genre('Horror', '../../assets/horror-emoji.png'),
         new Genre('Romance', '../../assets/romance-emoji.png'),
-        new Genre('Drama', '../../assets/drama-emoji.png')
+        new Genre('Drama', '../../assets/drama-emoji.png'),
+        new Genre('Action', '../../assets/action-emoji.png'),
+        new Genre('Thriller', '../../assets/thriller-emoji.png')
     ];
 
     getGenres() {
