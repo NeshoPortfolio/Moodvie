@@ -12,6 +12,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { MoviesComponent } from './movies/movies.component';
 import { MovieItemComponent } from './movie-item/movie-item.component';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
+import { ProfileComponent } from './profile/profile.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { MovieDetailComponent } from './movie-detail/movie-detail.component';
     GenreItemComponent,
     MoviesComponent,
     MovieItemComponent,
-    MovieDetailComponent
+    MovieDetailComponent,
+    ProfileComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
