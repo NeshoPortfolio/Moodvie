@@ -23,12 +23,17 @@
     cursor: pointer;
 }
 
+.card:hover>.hr-grey {
+    border-color: #444045;
+}
+
 .img-responsive {
     display: inline-block;
 }
 
 .hr-grey {
     border-color: #69666A;
+    transition: .2s ease-in-out all;
     height: 11px;
     width: 261px;
 }
