@@ -1,3 +1,26 @@
-<p>
-  login works!
-</p>
+<div class="card card-container">
+
+    <img class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"/>
+    <p *ngIf="incorrectCredentials" class="text-center">Incorrect Username or Password</p>
+
+    <form class="form-signin">
+
+        <input type="email" class="form-control" placeholder="Email address" required autofocus #emailInput/>
+        <input type="password" class="form-control" placeholder="Password" required #passwordInput/>
+
+        <div id="remember" class="checkbox">
+            <label><input *ngIf="savedUser; else unSavedUser" type="checkbox" #rememberMeCheckbox><span class="remember-me-text">Remember me</span></label>
+        </div>
+
+        <ng-template #unSavedUser>
+            <input type="checkbox" #rememberMeCheckbox>
+        </ng-template>
+
+        <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit" (click)="validateCredentials()">Sign in</button>
+    </form>
+    
+    <div class="link-container">
+        <a (click)="onForgotPasswordClicked()" class="forgot-password pull-left">Forgot password?</a>
+        <a (click)="onSignUpClicked()" class="signup pull-right">Sign up</a>
+    </div>
+</div>
