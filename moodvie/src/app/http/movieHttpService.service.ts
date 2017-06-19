@@ -7,7 +7,7 @@ import { Constants } from '../shared/constants';
 export class MovieHttpService {
 
     constructor(private http: Http) {
-        console.log(Constants.prototype.API_BASE_URL);
+
     }
 
     getMovies(genreId: number, page: number) {
@@ -17,5 +17,9 @@ export class MovieHttpService {
         ).map((response: Response) => {
                 return response.json();
             });
+    }
+
+    getPosterUrl(size: string, posterPath: string) {
+        return Constants.prototype.API_POSTER_BASE_URL + size + '/' + posterPath;
     }
 }
