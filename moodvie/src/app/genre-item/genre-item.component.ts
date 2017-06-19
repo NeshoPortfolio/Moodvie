@@ -1,6 +1,6 @@
 import { Component, OnInit, Input} from '@angular/core';
 import { Router } from '@angular/router';
-import { Genre } from '../model/genre.model';
+import { StaticGenre } from '../model/static-genre.model';
 
 @Component({
   selector: 'app-genre-item',
@@ -10,7 +10,7 @@ import { Genre } from '../model/genre.model';
 export class GenreItemComponent implements OnInit {
 
   @Input()
-  genre: Genre;
+  genre: StaticGenre;
 
   constructor(private router: Router) { }
 
@@ -18,7 +18,6 @@ export class GenreItemComponent implements OnInit {
   }
 
   onGenreClicked(type: string) {
-    console.log(type);
     this.router.navigate(['/movies', type]);
   }
 

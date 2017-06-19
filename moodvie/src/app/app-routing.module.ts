@@ -9,10 +9,9 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { SignUpComponent } from './sign-up/sign-up.component';
 
 const appRoutes: Routes = [
-    {path: '', component: GenreSelectionComponent},
-    {path: 'movies/:genre', component: MoviesComponent, children: [
-        {path: ':movie', component: MovieDetailComponent}
-    ]},
+    {path: '', redirectTo: '/genres', pathMatch: 'full'},
+    {path: 'genres', component: GenreSelectionComponent},
+    {path: 'movies/:genre', component: MoviesComponent},
     {path: 'profile', component: ProfileComponent},
     {path: 'login', component: LoginComponent},
     {path: 'forgotpassword', component: ForgotPasswordComponent},

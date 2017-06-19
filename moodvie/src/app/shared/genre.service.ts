@@ -1,14 +1,14 @@
-import { Genre } from '../model/genre.model';
+import { StaticGenre } from '../model/static-genre.model';
 
 export class GenreService {
 
-    private genres: Genre[] = [
-        new Genre('Comedy', '../../assets/comedy-emoji.png'),
-        new Genre('Horror', '../../assets/horror-emoji.png'),
-        new Genre('Romance', '../../assets/romance-emoji.png'),
-        new Genre('Drama', '../../assets/drama-emoji.png'),
-        new Genre('Action', '../../assets/action-emoji.png'),
-        new Genre('Thriller', '../../assets/thriller-emoji.png')
+    private genres: StaticGenre[] = [
+        new StaticGenre(35, 'Comedy', '../../assets/comedy-emoji.png'),
+        new StaticGenre(27, 'Horror', '../../assets/horror-emoji.png'),
+        new StaticGenre(10749, 'Romance', '../../assets/romance-emoji.png'),
+        new StaticGenre(18, 'Drama', '../../assets/drama-emoji.png'),
+        new StaticGenre(28, 'Action', '../../assets/action-emoji.png'),
+        new StaticGenre(53, 'Thriller', '../../assets/thriller-emoji.png')
     ];
 
     getGenres() {

@@ -103,6 +103,7 @@ p {
 .signup:active,
 .signup:focus {
     color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 
 .remember-me-text {

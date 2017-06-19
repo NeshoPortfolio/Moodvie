@@ -10,12 +10,12 @@ import { GenreItemComponent } from './genre-item/genre-item.component';
 import { GenreService } from './shared/genre.service';
 import { AppRoutingModule } from './app-routing.module';
 import { MoviesComponent } from './movies/movies.component';
-import { MovieItemComponent } from './movie-item/movie-item.component';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { MovieHttpService } from './http/movieHttpService.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,6 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
     HeaderComponent,
     GenreItemComponent,
     MoviesComponent,
-    MovieItemComponent,
     MovieDetailComponent,
     ProfileComponent,
     LoginComponent,
@@ -37,7 +36,7 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
     HttpModule,
     AppRoutingModule
   ],
-  providers: [GenreService],
+  providers: [GenreService, MovieHttpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

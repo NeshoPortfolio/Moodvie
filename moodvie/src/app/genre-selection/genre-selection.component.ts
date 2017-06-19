@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GenreService } from '../shared/genre.service';
-import { Genre } from '../model/genre.model';
+import { StaticGenre } from '../model/static-genre.model';
 
 @Component({
   selector: 'app-genre-selection',
@@ -9,7 +9,7 @@ import { Genre } from '../model/genre.model';
 })
 export class GenreSelectionComponent implements OnInit {
 
-  genres: Genre[] = [];
+  genres: StaticGenre[] = [];
 
   constructor(private genreService: GenreService) { }
 
